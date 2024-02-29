@@ -1,5 +1,6 @@
 // app.js
 const express = require("express");
+const cors = require("cors");
 const bodyParser = require("body-parser");
 const usersRoutes = require("./routes/users");
 const gamesRoutes = require("./routes/games");
