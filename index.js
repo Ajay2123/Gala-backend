@@ -8,6 +8,10 @@ const statsRoutes = require("./routes/stats");
 const app = express();
 const PORT = 3001;
 
+// Use cors middleware
+app.use(cors());
+
+// Use body-parser middleware
 app.use(bodyParser.json());
 
 app.use("/users", usersRoutes);
